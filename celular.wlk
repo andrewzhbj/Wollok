@@ -1,8 +1,7 @@
 /* Primer modelo */
 const maxBateria = 100
 const samsungMaxMemory = 16000
-const iphoneMaxMemory = 20000
-const motoMaxMemory = 15000
+
 object samsung{
 	var bateria = 3
 	var estado = false
