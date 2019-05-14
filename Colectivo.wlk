@@ -48,3 +48,21 @@ object colectivo{
 		}
 	}
 }
+
+
+1 km entre parada
+1 inicio, 1 final y 4 paradas intermedias
+Capacidad de pasajeros
+En el inicio el colectivo esta vacio, en las paradas pueden bajar o subir X personas, en el final se bajan todos
+10L  km + 0,2 L  persona
+Tarifa
+Desde la anteúltima = $5
+Desde cualquier otra= $20
+Recaudacion empieza en 0
+Comienzo 
+Cant. Personas = 0
+cant. Combustible = full
+$ recaudada= 0
+Nadie se sube ni baja en la misma parada
+Final
+Hay un tanque de combustible, sale $2  litro
