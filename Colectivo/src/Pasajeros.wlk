@@ -1,19 +1,18 @@
 object pasajeros{
+	const maxCapacidad = 50
 	var	property total = 0
-	var property parados = 0
-	var property sentados = 0
 	
-	method aumentar(sentado){
-		if(sentado) sentados++
-		else parados++
+	method verificarCapacidad(){
+		return (total+1 == maxCapacidad+1)
 	}
-	method totales(){
-		total = parados + sentados
-		return total
+	method aumentar(){
+		total++;
+	}
+	method restar(cantidad){
+		total -= cantidad
 	}
 	method bajarTodos(){
-		sentados = 0
-		parados = 0
 		total = 0
 	}
+	method actual() = return total
 }

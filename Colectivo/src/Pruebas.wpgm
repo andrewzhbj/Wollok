@@ -1,0 +1,35 @@
+import Colectivo.*
+import Recaudacion.*
+import Combustible.*
+import Pasajeros.*
+import Paradas.*
+
+program primerCaso{
+
+	/*
+	 * El colectivo empezará con 70 de combustible
+	 * A medida que va avanzando se quedará atascado en la anteúltima parada
+	*/
+	console.println('Estableciendo la cantidad de personas en cada parada..')
+	thames.personasQueSubiran(2)
+	liniers.personasQueSubiran(0) 
+	palermo.personasQueSubiran(10) 
+	saavedra.personasQueSubiran(20)  
+	
+	console.println('Estableciendo combustible..')
+	combustible.maxCombustible(70)
+	
+	console.println('Avanza el colectivo..')
+	console.println(colectivo.avanzar())
+	console.println('Abriendo puerta...')
+	console.println(colectivo.subirPersona(liniers))
+	console.println(colectivo.subirPersona(palermo))
+	console.println('Cerrando puerta..')
+	console.println('Pasajeros actual: ' + pasajeros.actual())
+	
+	console.println('Avanza el colectivo..')
+	console.println(colectivo.avanzar())
+	console.println('Abriendo puerta...')
+	console.println(colectivo.bajarPersonas())
+	console.println('Pasajeros actual: ' + pasajeros.actual())
+}
