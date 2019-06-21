@@ -1,0 +1,30 @@
+import Colectivo.*
+import Recaudacion.*
+import Combustible.*
+import Pasajeros.*
+import Paradas.*
+
+
+/* Primer caso */
+test "Verificacion del combustible"{
+	combustible.maxCombustible(30)
+	thames.personasQueSubiran(1)
+	liniers.personasQueSubiran(0)
+	colectivo.avanzar() 
+	colectivo.subirPersona(palermo)
+	colectivo.avanzar() 
+	/* Devuelve verdad si el combustible se pasa del minimo*/
+	assert.that(combustible.verificarFuturoConsumo())
+}
+
+/* Segundo caso */
+test "Verificacion de pasajeros"{
+	/* Se establecen las personas a subir */
+	thames.personasQueSubiran(2)
+	liniers.personasQueSubiran(0)
+	palermo.personasQueSubiran(4)
+	saavedra.personasQueSubiran(1)
+	
+	colectivo.avanzar()
+	colectivo.subirPersona()
+}

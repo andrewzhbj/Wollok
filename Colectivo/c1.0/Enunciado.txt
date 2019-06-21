@@ -1,0 +1,17 @@
+Un colectivo hace un recorrido ida y vuelta con las siguientes caracteristicas:
+
+.Posee 6 paradas
+.Empieza y termina en la primera parada
+.Cada parada se separa por 1 kilometro de distancia
+.En el final del recorrido se bajan todas las personas
+.Solamente en el sexto recorrido el colectivo puede recargar combustible
+.Nadie puede subirse ni bajarse en la misma parada
+.Capacidad de pasajeros (al inicio está vacio)
+.Cantidad de pasajeros
+.Cantidad de combustible (al inicio está lleno) 
+.Capacidad de combustible
+.Recaudacion del colectivo (al inicio es de 0)
+.Una tarifa general de 20$ y 5$ (si es desde la anteultima parada)
+
+Y por último el consumo de combustible tiene la siguiente formula:
+- 10 Litros + 0,2 x Pasajero
