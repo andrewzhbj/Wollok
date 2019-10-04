@@ -1,0 +1,12 @@
+import wollok.game.*
+import federico.*
+import level.*
+
+program game{
+	level.configureStart()
+	level.configureKeys()
+	level.configureLimits()
+	console.println(federico.hasEnergy())
+	game.start()
+	
+}
