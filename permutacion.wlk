@@ -11,9 +11,6 @@ object wollok {
 		return (1 .. numerosMaximos).map({x => listaNueva.subList(0, x)})
 	}
 	
-	
-	method seleccionarCarta(numero){ return lista.get(numero) }
-	
 	method existe(carta){ return (lista.any({ x => x.numero() == carta.numero() })) }
 }
 
