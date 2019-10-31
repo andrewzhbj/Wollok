@@ -1,0 +1,12 @@
+import wollok.game.*
+import Elementos.*
+
+program Juego{
+		game.title("GWORD")
+		game.height(16)
+		game.width(20)
+		game.ground("fondo.png")
+		menu.dibujarElementos()
+		game.say(ayuda, "Para elegir usa 1, 2 o 3!")
+		game.start()
+}
